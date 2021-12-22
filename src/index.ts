@@ -8,7 +8,7 @@ const app = express();
 //config api
 app.use(express.json());
 app.use(urlencoded({ extended: true}));
-require('dotenv').config()
+require('dotenv').config();
 
 //routes
 app.use(statusRoute);
