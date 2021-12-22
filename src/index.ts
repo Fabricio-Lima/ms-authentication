@@ -1,12 +1,19 @@
-import express, { Request, Response, NextFunction } from 'express';
+import express, { urlencoded } from 'express';
+import statusRoute from './routes/status.route';
+import usersRoute from './routes/users.route';
 
 
 const app = express();
 
-app.get('/status', (req: Request, res: Response, next: NextFunction ) => {
-    res.status(200).send({ foo: 'bar' });
-});
+//config api
+app.use(express.json());
+app.use(urlencoded({ extended: true}));
 
+//routes
+app.use(statusRoute);
+app.use(usersRoute);
+
+//server initialite
 app.listen(3000, () => {
     console.log('\n[+] Server is running on port 3000...\n');
 });
