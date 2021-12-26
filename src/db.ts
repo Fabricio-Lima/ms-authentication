@@ -1,10 +1,7 @@
+import config from 'config';
 import { Pool } from "pg";
 
-//config dotenv
-require('dotenv').config();
-
-const SECRET_KEY = process.env.SECRET_KEY
-const connectionString = SECRET_KEY;
+const connectionString = config.get<string>('database.uri');
 
 const db = new Pool({ connectionString });
 

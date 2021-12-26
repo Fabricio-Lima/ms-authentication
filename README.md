@@ -10,7 +10,7 @@ Etapas para executar o projeto:
 
 --> 1. execute o comando `npm i` para instalar as dependências.
 
---> 2. crie um arquivo .env e insira a URL do seu banco de dados ElephantSQL.
+--> 2. insira a URI do ElephantSQL e o Salt do Token JWT em `config/default.json`.
 
 --> 3. execute o comando`npm start` para iniciar o microserviço.
 
