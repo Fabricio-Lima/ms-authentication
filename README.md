@@ -2,7 +2,7 @@
 Microserviço de autenticação por token JWT
 
 # Objetivo
-Autenticação de usuários por Token JWT, e uso do *ElephantSQL* como banco de dados.
+Autenticação de usuários por Token JWT, usando Node.js, Typescript e uso do *ElephantSQL* como banco de dados.
 
 # Como usar
 
